@@ -1,3 +1,4 @@
+/* RESET + BASE */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* NAVBAR */
+/* NAVIGATION BAR */
 header {
   background: #020617;
   border-bottom: 1px solid #1f2937;
@@ -28,6 +29,8 @@ header {
 
 .logo {
   font-weight: 700;
+  font-size: 1.1rem;
+  color: #ffffff;
 }
 
 nav ul {
@@ -42,15 +45,16 @@ nav a {
   padding: 0.4rem 0.7rem;
   border-radius: 999px;
   font-size: 0.95rem;
+  transition: 0.2s ease;
 }
 
 nav a:hover,
 nav a.active {
   background: #4f46e5;
-  color: #ffffff;
+  color: white;
 }
 
-/* MAIN */
+/* MAIN CONTENT */
 main {
   max-width: 960px;
   margin: 2rem auto;
@@ -63,9 +67,18 @@ main {
 
 .section h2 {
   margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: #ffffff;
 }
 
-/* CARDS */
+.section p,
+.section ul,
+.section li {
+  color: #d1d5db;
+  margin-bottom: 0.5rem;
+}
+
+/* CARD GRID */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -77,14 +90,4 @@ main {
   background: #020617;
   padding: 1rem;
   border-radius: 10px;
-  border: 1px solid #1f2937;
-}
-
-/* FOOTER */
-footer {
-  margin-top: 3rem;
-  padding: 1rem;
-  text-align: center;
-  color: #6b7280;
-  border-top: 1px solid #1f2937;
-}
+  border:
