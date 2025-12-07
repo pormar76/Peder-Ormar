@@ -9,7 +9,7 @@
 
 <header>
   <div class="nav-container">
-    <div class="logo">[Ditt navn]</div>
+    <div class="logo">[Peder Ormar]</div>
     <nav>
       <ul>
         <li><a class="active" href="index.html">Hjem</a></li>
@@ -24,8 +24,8 @@
 
 <main>
   <section class="section">
-    <h2>Hei, jeg er [navn] 👋</h2>
-    <p>Dette er hjemmesiden min. Her finner du litt om meg, interessene mine, prosjekter og favoritt-ting.</p>
+    <h2>Hei, jeg er [Peder Ormar] 👋</h2>
+    <p>This is my homepage. Here you find facts about me, my interests, what I what I stand for in life and my goals in life.</p>
   </section>
 
   <section class="section">
@@ -35,7 +35,7 @@
 </main>
 
 <footer>
-  © 2025 [Ditt navn]
+  © 2025 [Peder Ormar]
 </footer>
 
 </body>
