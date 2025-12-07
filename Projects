@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <title>Prosjekter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="logo">[Ditt navn]</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="om-meg.html">Om meg</a></li>
+        <li><a href="interesser.html">Interesser</a></li>
+        <li><a class="active" href="prosjekter.html">Prosjekter</a></li>
+        <li><a href="favoritter.html">Favoritter</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <h2>Prosjekter</h2>
+    <p>Her kan du skrive om skoleprosjekter, kreative ting du har laget eller jobber du har gjort.</p>
+  </section>
+
+  <section class="section">
+    <div class="card-grid">
+      <div class="card">Prosjekt 1</div>
+      <div class="card">Prosjekt 2</div>
+      <div class="card">Prosjekt 3</div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2025 [Ditt navn]</footer>
+
+</body>
+</html>
