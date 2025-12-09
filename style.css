@@ -99,3 +99,18 @@ main {
     gap: 1.5rem;
     align-items: start; /* viktig – gjør at kortene ikke blir like høye */
 }
+/* Layout fixes for project cards */
+.section {
+  padding: 2.5rem 0;       /* normal spacing over/under */
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  align-items: start;      /* each card fits its own height */
+}
+
+.card {
+  height: auto;            /* make sure cards are not stretched */
+}
