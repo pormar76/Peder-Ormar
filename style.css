@@ -91,3 +91,5 @@ main {
   padding: 1rem;
   border-radius: 10px;
   border:
+  min-height: auto;
+}
