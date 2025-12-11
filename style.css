@@ -1,116 +1,169 @@
-/* RESET + BASE */
+/* Base layout */
+
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 body {
-  background: #0f172a;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #020617; /* very dark blue/black */
   color: #e5e7eb;
-  line-height: 1.6;
 }
 
-/* NAVIGATION BAR */
+/* Links */
+
+a {
+  color: #a5b4fc;
+}
+
+a:hover {
+  color: #c7d2fe;
+}
+
+/* Header & navigation */
+
 header {
-  background: #020617;
   border-bottom: 1px solid #1f2937;
+  background-color: #020617;
 }
 
 .nav-container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .logo {
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #e5e7eb;
 }
 
 nav ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 nav a {
   text-decoration: none;
   color: #9ca3af;
-  padding: 0.4rem 0.7rem;
+  padding: 0.4rem 0.9rem;
   border-radius: 999px;
   font-size: 0.95rem;
-  transition: 0.2s ease;
 }
 
-nav a:hover,
+nav a:hover {
+  background-color: #1f2937;
+  color: #e5e7eb;
+}
+
 nav a.active {
-  background: #4f46e5;
-  color: white;
+  background-color: #4f46e5;
+  color: #f9fafb;
 }
 
-/* MAIN CONTENT */
+/* Main layout */
+
 main {
-  max-width: 960px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  max-width: 1100px;      /* bredere innhold */
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem;
 }
 
 .section {
-  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .section h2 {
-  margin-bottom: 0.5rem;
-  font-size: 1.4rem;
-  color: #ffffff;
+  font-size: 1.9rem;
+  margin: 0 0 0.75rem 0;
 }
 
-.section p,
-.section ul,
-.section li {
-  color: #d1d5db;
-  margin-bottom: 0.5rem;
+.section p {
+  margin: 0.2rem 0 0.2rem 0;
 }
 
-/* CARD GRID */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.card {
-    background-color: #1f2937;
-    padding: 1rem 1.2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.5rem;
-    align-items: start; /* viktig – gjør at kortene ikke blir like høye */
-}
-/* Layout fixes for project cards */
-.section {
-  padding: 2.5rem 0;       /* normal spacing over/under */
-}
+/* Cards & grids */
 
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
-  align-items: start;      /* each card fits its own height */
+  margin-top: 1rem;
 }
 
 .card {
-  height: auto;            /* make sure cards are not stretched */
+  background-color: #020617;
+  border-radius: 12px;
+  padding: 1.5rem 1.7rem;
+  border: 1px solid #1f2937;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  height: auto;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  font-size: 1.15rem;
+}
+
+.card p {
+  margin-top: 0.2rem;
+}
+
+/* Text & lists */
+
+p, li {
+  line-height: 1.6;
+}
+
+ol {
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+  padding-left: 1.3rem;
+}
+
+/* Images */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+
+footer {
+  border-top: 1px solid #1f2937;
+  text-align: center;
+  padding: 1rem 0 2rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 700px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  main {
+    padding: 2rem 1.1rem 2.5rem;
+  }
+
+  .section {
+    margin-bottom: 2.5rem;
+  }
 }
