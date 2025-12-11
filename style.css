@@ -7,7 +7,9 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: #020617; /* very dark blue/black */
+  background-color: #020617; /* kan byttes til fx #020617 eller #020617 for mer blått */
+}
+
   color: #e5e7eb;
 }
 
@@ -102,7 +104,7 @@ main {
 }
 
 .card {
-  background-color: #020617;
+  background-color: #020617; /* mørk */
   border-radius: 12px;
   padding: 1.5rem 1.7rem;
   border: 1px solid #1f2937;
