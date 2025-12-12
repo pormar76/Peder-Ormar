@@ -1,180 +1,169 @@
-/* Base layout */
-
+/* GLOBAL RESET */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+/* BODY – yellow-orange energetic background */
 body {
-  margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #1a1a1a; /* mørk tekst for lys bakgrunn */
-  line-height: 1.6;
-
-  /* LIVLIG YELLOW–ORANGE BAKGRUNN */
   background: linear-gradient(135deg, #fff7cc 0%, #ffe181 40%, #ffb347 75%, #ff8c42 100%);
+  color: #1a1a1a;
+  line-height: 1.6;
+  padding-bottom: 50px;
 }
 
-  color: #e5e7eb;
-}
-
-/* Links */
-
-a {
-  color: #a5b4fc;
-}
-
-a:hover {
-  color: #c7d2fe;
-}
-
-/* Header & navigation */
-
+/* NAVBAR */
 header {
-  background-color: #111827;   /* mørk, men ikke kullsvart */
-  border-bottom: 1px solid #1f2937;
-}
-
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(8px);
+  padding: 15px 40px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
-.logo {
-  font-weight: 600;
-  font-size: 1.25rem;
-  color: #e5e7eb;
+header .logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
 }
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
+  gap: 22px;
 }
 
 nav a {
   text-decoration: none;
-  color: #9ca3af;
-  padding: 0.4rem 0.9rem;
-  border-radius: 999px;
-  font-size: 0.95rem;
+  color: #000;
+  font-weight: 500;
+  transition: 0.2s;
 }
 
 nav a:hover {
-  background-color: #1f2937;
-  color: #e5e7eb;
+  color: #ff8c42;
 }
 
-nav a.active {
-  background-color: #4f46e5;
-  color: #f9fafb;
-}
-
-/* Main layout */
-
+/* MAIN LAYOUT WRAPPER */
 main {
-  max-width: 1100px;      /* bredere innhold */
-  margin: 0 auto;
-  padding: 2.5rem 1.5rem 3rem;
+  width: 85%;
+  max-width: 1200px;
+  margin: 40px auto;
 }
 
-.section {
-  margin-bottom: 3rem;
+/* HEADERS */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #1a1a1a;
 }
 
-.section h2 {
-  font-size: 1.9rem;
-  margin: 0 0 0.75rem 0;
+/* HOMEPAGE HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
 }
 
-.section p {
-  margin: 0.2rem 0 0.2rem 0;
+.hero-text {
+  flex: 1;
 }
 
-/* Cards & grids */
+.hero img {
+  width: 280px;
+  border-radius: 14px;
+}
 
+/* BUTTONS */
+button, .btn {
+  padding: 12px 22px;
+  border-radius: 30px;
+  border: 2px solid #c57aff;
+  background-color: #8f5bff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #8f5bff;
+}
+
+button:hover, .btn:hover {
+  transform: scale(1.05);
+}
+
+/* CARD GRID (homepage sections) */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 20px;
 }
+
+/* ✨ NEW LIGHT CARDS FOR YELLOW BACKGROUND */
 .card {
-  background-color: rgba(255, 255, 255, 0.85); /* lys hvit med litt transparens */
+  background-color: rgba(255, 255, 255, 0.88);
   border: 1px solid #e5e5e5;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-  color: #1a1a1a; /* tydelig mørk tekst */
+  border-radius: 14px;
+  padding: 1.7rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  color: #1a1a1a;
 }
 
-
+/* CARD TEXT STYLING */
 .card h3 {
   color: #000;
-  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 
 .card p {
   color: #222;
+  font-size: 0.97rem;
+  margin-bottom: 16px;
 }
 
 .card a {
   color: #0055cc;
   font-weight: 600;
+  text-decoration: none;
 }
 
-/* Text & lists */
-
-p, li {
-  line-height: 1.6;
+.card a:hover {
+  text-decoration: underline;
 }
 
-ol {
-  margin-top: 0.4rem;
-  margin-bottom: 0;
-  padding-left: 1.3rem;
+/* ABOUT / INTERESTS / PROJECTS PAGES */
+.section {
+  margin-top: 40px;
 }
 
-/* Images */
+.section h2 {
+  margin-bottom: 15px;
+}
 
+/* IMAGES IN CONTENT */
 img {
   max-width: 100%;
-  height: auto;
-  display: block;
+  border-radius: 12px;
 }
 
-/* Footer */
-
+/* FOOTER */
 footer {
-  background-color: #111827;
-  border-top: 1px solid #1f2937;
+  margin-top: 60px;
+  padding: 20px 0;
   text-align: center;
-  padding: 1.5rem 0 2rem;
-  margin-top: 2rem;
-  color: #9ca3af;
+  color: #333;
   font-size: 0.9rem;
-}
-
-/* Responsive tweaks */
-
-@media (max-width: 700px) {
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  main {
-    padding: 2rem 1.1rem 2.5rem;
-  }
-
-  .section {
-    margin-bottom: 2.5rem;
-  }
 }
