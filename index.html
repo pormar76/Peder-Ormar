@@ -11,6 +11,7 @@
 <header>
     <div class="nav-container">
         <div class="logo">Peder Ormar</div>
+
         <nav>
             <ul>
                 <li><a class="active" href="index.html">Home</a></li>
@@ -25,73 +26,83 @@
 
 <main>
 
-    <!-- HERO SECTION -->
-    <section class="section" style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center;">
+<!-- HERO SECTION -->
+<section class="section" style="display:flex; flex-wrap:wrap; gap:2rem; align-items:center;">
+    
+    <div style="flex:1 1 260px; min-width:250px;">
+        <h2>Hi, I'm Peder Ormar 👋</h2>
 
-        <!-- LEFT SIDE: TEXT -->
-        <div style="flex:1 1 260px; min-width:260px;">
+        <p style="margin-top:0.5rem;">
+            Welcome to my personal website. I am a journalism student with a passion for sports, 
+            especially football and sports commentary. On this site you can get to know me better, 
+            see what I am interested in, and take a look at some of the projects I have worked on.
+        </p>
 
-            <h2>Hi, I'm Peder Ormar 👋</h2>
+        <p style="margin-top:0.5rem;">
+            I am originally from Sandefjord, Norway, and I am currently studying in the United States. 
+            My dream is to work in sports media, preferably as a football commentator.
+        </p>
 
-            <p style="margin-top:0.5rem;">
-                Welcome to my personal website. I am a journalism student with a passion for sports, 
-                especially football and sports commentary. On this site you can get to know me better, 
-                see what I am interested in, and take a look at some of the projects I have worked on.
+        <div style="margin-top:1rem; display:flex; flex-wrap:wrap; gap:0.75rem;">
+            <a href="About.html" 
+               style="text-decoration:none; padding:0.7rem 1.2rem; border-radius:999px;
+                      background:#4f46e5; color:white; font-size:1rem;">
+                Read more about me
+            </a>
+
+            <a href="Projects.html" 
+               style="text-decoration:none; padding:0.7rem 1.2rem; border-radius:999px;
+                      border:1px solid #4f46e5; color:#4f46e5; font-size:1rem;">
+                View my projects
+            </a>
+        </div>
+    </div>
+
+    <div style="flex:1 1 260px; min-width:260px;">
+        <img src="profil.jpeg" alt="Profile picture"
+             style="width:100%; max-width:320px; border-radius:12px;">
+    </div>
+
+</section>
+
+
+
+<!-- OVERVIEW CARDS SECTION -->
+<section class="section">
+    <h2>What you can find on this site</h2>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>About me</h3>
+            <p>
+                A short introduction to who I am, where I come from, 
+                and how I ended up studying journalism in the US.
             </p>
+            <a href="About.html">Go to About me →</a>
+        </div>
 
-            <p style="margin-top:0.5rem;">
-                I am originally from Sandefjord, Norway, and I am currently studying in the United States. 
-                My dream is to work in sports media, preferably as a football commentator.
+        <div class="card">
+            <h3>Interests</h3>
+            <p>
+                Here you can read about my main interests: football, Formula 1, 
+                gaming, music, podcasts, movies and TV shows.
             </p>
-
-            <!-- BUTTONS -->
-            <div style="margin-top:1rem; display:flex; flex-wrap:wrap; gap:0.75rem;">
-                <a href="About.html" class="btn">Read more about me</a>
-                <a href="Projects.html" class="btn btn-outline">View my projects</a>
-            </div>
-
+            <a href="Interests.html">Go to Interests →</a>
         </div>
 
-        <!-- RIGHT SIDE: PROFILE IMAGE -->
-        <div>
-            <img src="profil.jpeg" alt="Peder Ormar" style="width:260px; border-radius:14px;">
+        <div class="card">
+            <h3>Projects</h3>
+            <p>
+                An overview of some of the projects I have worked on, including this website,
+                Ski World Championships coverage and the UWRF Gift & Thrift event.
+            </p>
+            <a href="Projects.html">Go to Projects →</a>
         </div>
 
-    </section>
+    </div>
 
-
-    <!-- WHAT YOU CAN FIND SECTION -->
-    <section class="section">
-        <h2>What you can find on this site</h2>
-
-        <div class="card-grid">
-
-            <div class="card">
-                <h3>About me</h3>
-                <p>A short introduction to who I am, where I come from, and how I ended up studying journalism in the US.</p>
-                <a href="About.html">Go to About me →</a>
-            </div>
-
-            <div class="card">
-                <h3>Interests</h3>
-                <p>
-                    Here you can read about my main interests: football, Formula 1, gaming, music, 
-                    podcasts, movies and TV shows.
-                </p>
-                <a href="Interests.html">Go to Interests →</a>
-            </div>
-
-            <div class="card">
-                <h3>Projects</h3>
-                <p>
-                    An overview of some of the projects I have worked on, including this website, 
-                    Ski World Championships coverage and the UWRF Gift & Thrift event.
-                </p>
-                <a href="Projects.html">Go to Projects →</a>
-            </div>
-
-        </div>
-    </section>
+</section>
 
 </main>
 
