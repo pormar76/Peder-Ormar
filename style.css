@@ -7,17 +7,12 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #e5e7eb;
+  color: #1a1a1a; /* mørk tekst for lys bakgrunn */
   line-height: 1.6;
 
-  /* Ny bakgrunn: litt liv, fortsatt mørk og rolig */
-  background:
-    radial-gradient(circle at top left, #1d4ed8 0, transparent 55%),
-    radial-gradient(circle at bottom right, #a855f7 0, transparent 60%),
-    #020617;
+  /* LIVLIG YELLOW–ORANGE BAKGRUNN */
+  background: linear-gradient(135deg, #fff7cc 0%, #ffe181 40%, #ffb347 75%, #ff8c42 100%);
 }
-
-
 
   color: #e5e7eb;
 }
