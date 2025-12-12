@@ -11,6 +11,7 @@
 <header>
     <div class="nav-container">
         <div class="logo">Peder Ormar</div>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -32,27 +33,48 @@
     <p>If you want to reach out to me—for school, work, collaboration, or anything else—you can use the options below.</p>
 
     <div class="card" style="max-width:500px; margin-top:20px;">
-        <h3>Send me an email</h3>
-
+        
+        <!-- EMAIL -->
+        <h3>Email</h3>
         <p>You can contact me directly at:</p>
-        <p style="font-size:1.1rem; font-weight:600; color:#4f46e5;">
+
+        <p style="font-size:1.1rem; font-weight:600;">
             <a href="mailto:peder.ormar@example.com" style="color:#4f46e5;">peder.ormar@example.com</a>
         </p>
 
-        <hr style="margin:20px 0; border:0; border-top:1px solid #ddd;">
+        <!-- PHONE NUMBERS WITH FLAGS -->
+        <h3 style="margin-top:25px;">Phone numbers</h3>
 
-        <h3>Or use this form</h3>
+        <p style="font-size:1.05rem;">
+            <img src="usa.jpeg" alt="USA flag" 
+                 style="width:30px; vertical-align:middle; margin-right:8px;">
+            +1 (715) 749-6460
+        </p>
+
+        <p style="font-size:1.05rem;">
+            <img src="norge.jpeg" alt="Norway flag" 
+                 style="width:30px; vertical-align:middle; margin-right:8px;">
+            +47 954 29 535
+        </p>
+
+        <hr style="margin:25px 0; border:0; border-top:1px solid #ddd;">
+
+        <!-- CONTACT FORM -->
+        <h3>Contact form</h3>
 
         <form style="display:flex; flex-direction:column; gap:12px;">
             <input type="text" placeholder="Your name" 
                    style="padding:12px; border-radius:8px; border:1px solid #ccc;">
+            
             <input type="email" placeholder="Your email" 
                    style="padding:12px; border-radius:8px; border:1px solid #ccc;">
+
             <textarea placeholder="Your message" rows="4"
                       style="padding:12px; border-radius:8px; border:1px solid #ccc;"></textarea>
 
             <button type="submit" class="btn" style="width:150px;">Send</button>
         </form>
+
     </div>
 </section>
 
