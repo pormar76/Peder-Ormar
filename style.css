@@ -106,14 +106,14 @@ main {
   gap: 1.5rem;
   margin-top: 1rem;
 }
-
 .card {
-  background-color: #1f2937;     /* litt lysere enn nå */
-  border: 1px solid #374151;     /* tydeligere kant */
+  background-color: #ffffff;      /* hvite kort – popper bra mot gul bakgrunn */
+  border: 1px solid #e2e2e2;      /* lys kant */
   border-radius: 12px;
   padding: 1.5rem 1.7rem;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
+
 
 .card h3 {
   margin-top: 0;
