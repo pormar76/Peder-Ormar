@@ -95,9 +95,17 @@ button, .btn {
 }
 
 .btn-outline {
-  background-color: transparent;
-  color: #8f5bff;
+  background-color: #f3cc5c;        /* lys oransje */
+  border: 2px solid #d39b3d;
+  color: #5a3b00;                   /* mørkere tekst */
 }
+
+.btn-outline:hover {
+  background-color: #ffb347;
+  color: #000;
+  transform: scale(1.05);
+}
+
 
 button:hover, .btn:hover {
   transform: scale(1.05);
